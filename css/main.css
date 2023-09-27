@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.accent-text {
+  color: #ff5b36;
+}
+
+nav {
+  text-transform: uppercase;
+  z-index: 5;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+nav .navbar-brand:focus,
+nav .navbar-brand:hover {
+  color: #ff5b36;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+}
+nav .nav-link,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show,
+nav .navbar-brand,
+nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show {
+  color: #ff5b36;
+}
+
+header.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/woda.jpg");
+  background-size: cover;
+  background-position: 17% 50%;
+  background-attachment: fixed;
+  z-index: 0;
+  color: #fff;
+}
+header.hero-img .hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hwb(0 0% 100%/0.79);
+  z-index: -5;
+}
+header.hero-img .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  top: 4rem;
+}
+header.hero-img .hero-text h1,
+header.hero-img .hero-text h2 {
+  text-transform: uppercase;
+}
+header.hero-img .fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #ff5b36;
+}/*# sourceMappingURL=main.css.map */
