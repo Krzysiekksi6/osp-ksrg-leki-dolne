@@ -22,8 +22,11 @@
     ></script>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+  <body data-bs-spy="scroll" data-bs-target="#nav">
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">
           <span class="accent-text">
@@ -49,14 +52,10 @@
               >strona główna</a
             >
             <a class="nav-link" href="#aboutus">o nas</a>
-            <a class="nav-link" href="#actions">akcje</a>
             <a class="nav-link" href="#history">historia</a>
-            <a class="nav-link" href="#social-activity">
-              działalność społeczna</a
-            >
+
             <a class="nav-link" href="#combat-facilities">zaplecze bojowe</a>
-            <a class="nav-link" href="#achievements">osiągnięcia</a>
-            <a class="nav-link" href="#files">pliki do pobrania</a>
+
             <a class="nav-link" href="#contact">kontakt</a>
           </div>
         </div>
@@ -162,39 +161,39 @@
             </div>
 
             <div
-            class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
-          >
-            <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
-            <p><i class="fa-regular fa-handshake"></i></p>
-            <p class="history-hero-text">
-              Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
-              także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
-              są dla nas kluczem do sukcesu.
-            </p>
-          </div>
+              class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
+            >
+              <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
+              <p><i class="fa-regular fa-handshake"></i></p>
+              <p class="history-hero-text">
+                Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
+                także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
+                są dla nas kluczem do sukcesu.
+              </p>
+            </div>
 
-          <div
-          class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
-        >
-          <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
-          <p><i class="fa-regular fa-handshake"></i></p>
-          <p class="history-hero-text">
-            Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
-            także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
-            są dla nas kluczem do sukcesu.
-          </p>
-        </div>
-        <div
-        class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
-      >
-        <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
-        <p><i class="fa-regular fa-handshake"></i></p>
-        <p class="history-hero-text">
-          Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
-          także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
-          są dla nas kluczem do sukcesu.
-        </p>
-      </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
+            >
+              <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
+              <p><i class="fa-regular fa-handshake"></i></p>
+              <p class="history-hero-text">
+                Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
+                także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
+                są dla nas kluczem do sukcesu.
+              </p>
+            </div>
+            <div
+              class="col-sm-12 col-md-6 col-lg-4 text-center history-hero-item"
+            >
+              <p class="history-hero-title mb-1">ŚWIETNE RELACJE</p>
+              <p><i class="fa-regular fa-handshake"></i></p>
+              <p class="history-hero-text">
+                Dbamy o dobre relacje nie tylko wewnątrz naszego zespołu, ale
+                także z mieszkańcami i innymi jednostkami. Współpraca i zaufanie
+                są dla nas kluczem do sukcesu.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -320,33 +319,54 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact py-5">
+        <h2 class="section-title">kontakt</h2>
+        <div class="underline"></div>
+
+        <div class="container">
+          <div class="row text-center contact-us">
+            <div class="col-sm-6 col-lg-4 contact-item order-1">
+              <h3>Główna Siedziba</h3>
+              <p>Łęki Dolne</p>
+              <p>39-221 Łęki Górne</p>
+              <p>+48 123 123 123</p>
+              <p>mail@mail</p>
+            </div>
+            <div class="col-lg-4 contact-item order-0">
+              <h3>Social Media</h3>
+              <div class="social-media">
+                <p>fb</p>
+                <p>ig</p>
+                <p>twt</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 contact-item order-1">
+              <h3>Główna Siedziba</h3>
+              <p>Łęki Dolne</p>
+              <p>39-221 Łęki Górne</p>
+              <p>+48 123 123 123</p>
+              <p>mail@mail</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-shadow"></div>
+      </section>
     </main>
+
+    <footer class="bg-dark text-light py-4 text-center">
+      <p class="mb-0">&copy; 2023 | All rights reserved</p>
+      <p>
+        Made with <span role="img" aria-label="red heart">❤️</span> in Łęki
+        Dolne
+      </p>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
     <script src="./js/script.js"></script>
-
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </body>
 </html>
