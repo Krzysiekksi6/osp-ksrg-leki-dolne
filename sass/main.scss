@@ -69,9 +69,9 @@ nav {
 header.hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/woda.jpg");
+  background-image: url("../img/hero-img_small.jpg");
   background-size: cover;
-  background-position: 17% 50%;
+  background-position: center;
   background-attachment: fixed;
   z-index: 0;
 
@@ -130,7 +130,7 @@ header.hero-img {
 
 .history-hero {
   position: relative;
-  background-image: url("../img/woda.jpg");
+  background-image: url("../img/water_small.jpg");
   background-size: cover;
   background-position: 17% 50%;
   background-attachment: fixed;
@@ -147,6 +147,12 @@ header.hero-img {
 
   &-title {
     font-size: 24px;
+  }
+
+  .link-item {
+    text-decoration: none;
+    color: colors.$primary-color;
+    text-transform: uppercase;
   }
 
   .history-shadow {
@@ -179,7 +185,7 @@ header.hero-img {
 
 .contact {
   position: relative;
-  background-image: url("../img/zdjecie_kalendarz.png");
+  background-image: url("../img/calendar_small.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -195,28 +201,36 @@ header.hero-img {
     display: flex;
     align-items: center;
     color: colors.$white-color;
-
-    .social-media {
-      font-size: 26px;
-      p {
-        padding: 10px;
-        color: colors.$white-color;
-        transition: color 0.3s;
-      }
-
-      p:hover {
-        color: colors.$primary-color;
-      }
-    }
+    text-align: center;
   }
 
   &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 30px 0;
 
     h3 {
       margin-bottom: 15px;
       text-transform: uppercase;
       letter-spacing: 2px;
+    }
+
+    a {
+      text-decoration: none;
+      color: colors.$white-color;
+      margin: 10px 0;
+    }
+
+    .fb {
+      color: #4267B2;
+    }
+    .yt {
+      color: #FF0000;
+    }
+    .email {
+      color: #FFFC00;
     }
   }
   &-shadow {
@@ -229,25 +243,32 @@ header.hero-img {
     z-index: -5;
   }
 }
-
+// MEDIA QUERIES
 @media (min-width: 768px) {
   header.hero-img {
+    background-image: url("../img/hero-img_medium.jpg");
+
     .hero-text {
-      // H1
       .h1,
       h1 {
         font-size: calc(2rem + 1.75vw);
       }
-      // H2
       .h3,
       h3 {
         font-size: calc(1.5rem + 0.8vw);
       }
-      // PARAGRAPH
       p {
         font-size: calc(1rem + 0.6vw);
       }
     }
+  }
+
+  .history-hero {
+    background-image: url("../img/water_medium.jpg");
+  }
+
+  .contact {
+    background-image: url("../img/calendar_medium.png");
   }
 }
 
@@ -255,10 +276,18 @@ header.hero-img {
   html {
     scroll-padding-top: 72px;
   }
-
-  .history-hero {
-  }
 }
 
 @media (min-width: 1200px) {
+  header.hero-img {
+    background-image: url("../img/hero-img_big.jpg");
+  }
+
+  .history-hero {
+    background-image: url("../img/water_big.jpg");
+  }
+
+  .contact {
+    background-image: url("../img/calendar_big.png");
+  }
 }
