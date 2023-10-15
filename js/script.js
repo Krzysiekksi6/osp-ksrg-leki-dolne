@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navList = document.querySelector(".navbar-collapse");
 
   const addShadow = () => {
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 10) {
       nav.classList.add("shadow-bg");
     } else {
       nav.classList.remove("shadow-bg");
