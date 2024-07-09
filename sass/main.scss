@@ -1,4 +1,4 @@
-@use "./colors" as colors;
+@use './colors' as colors;
 
 * {
   box-sizing: border-box;
@@ -11,16 +11,19 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: colors.$bg-color;
+}
+
+article {
+  line-height: 1.5;
 }
 
 .accent-text {
   color: colors.$primary-color;
 }
 
-.shadow-bg
- {
+.shadow-bg {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -70,7 +73,7 @@ nav {
 header.hero-img {
   position: relative;
   height: 100vh;
-  background-image: url("../img/hero-img_small.jpg");
+  background-image: url('../img/hero-img_small.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -131,7 +134,7 @@ header.hero-img {
 
 .history-hero {
   position: relative;
-  background-image: url("../img/water_small.jpg");
+  background-image: url('../img/water_small.jpg');
   background-size: cover;
   background-position: 17% 50%;
   background-attachment: fixed;
@@ -186,7 +189,7 @@ header.hero-img {
 
 .contact {
   position: relative;
-  background-image: url("../img/calendar_small.png");
+  background-image: url('../img/calendar_small.png');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -225,13 +228,13 @@ header.hero-img {
     }
 
     .fb {
-      color: #4267B2;
+      color: #4267b2;
     }
     .yt {
-      color: #FF0000;
+      color: #ff0000;
     }
     .email {
-      color: #FFFC00;
+      color: #fffc00;
     }
   }
   &-shadow {
@@ -247,7 +250,7 @@ header.hero-img {
 // MEDIA QUERIES
 @media (min-width: 768px) {
   header.hero-img {
-    background-image: url("../img/hero-img_medium.jpg");
+    background-image: url('../img/hero-img_medium.jpg');
 
     .hero-text {
       .h1,
@@ -265,11 +268,11 @@ header.hero-img {
   }
 
   .history-hero {
-    background-image: url("../img/water_medium.jpg");
+    background-image: url('../img/water_medium.jpg');
   }
 
   .contact {
-    background-image: url("../img/calendar_medium.png");
+    background-image: url('../img/calendar_medium.png');
   }
 }
 
@@ -281,14 +284,14 @@ header.hero-img {
 
 @media (min-width: 1200px) {
   header.hero-img {
-    background-image: url("../img/hero-img_big.jpg");
+    background-image: url('../img/hero-img_big.jpg');
   }
 
   .history-hero {
-    background-image: url("../img/water_big.jpg");
+    background-image: url('../img/water_big.jpg');
   }
 
   .contact {
-    background-image: url("../img/calendar_big.png");
+    background-image: url('../img/calendar_big.png');
   }
 }

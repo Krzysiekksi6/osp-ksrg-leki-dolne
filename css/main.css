@@ -13,6 +13,10 @@ body {
   background-color: #ebecf2;
 }
 
+article {
+  line-height: 1.5;
+}
+
 .accent-text {
   color: #ff5b36;
 }
@@ -194,13 +198,13 @@ header.hero-img .fa-chevron-down {
   margin: 10px 0;
 }
 .contact-item .fb {
-  color: #4267B2;
+  color: #4267b2;
 }
 .contact-item .yt {
-  color: #FF0000;
+  color: #ff0000;
 }
 .contact-item .email {
-  color: #FFFC00;
+  color: #fffc00;
 }
 .contact-shadow {
   position: absolute;
